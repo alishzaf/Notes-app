@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes app</title>
+
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="notes.css">
+    <!-- custom css link  -->
+     
+
+     <!-- Font Awesome CDN Link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     <!-- Font Awesome CDN Link  -->
+</head>
+<body>
+    <div class="container"> 
+    <div class="note">
+    <div class="btn">
+    <button id="addnote"> <i class="fa-regular fa-square-plus"></i><br> Add note</button>
+     </div>
+     <div class="newNotes"></div>
+     </div>
+    
+
+     <div class="addform">
+     <div class="head">
+     <h2>Add a Note</h2>
+    <button id="crossicon"><i class="fa-solid fa-xmark"></i> </button>
+    </div>
+    <div class="inputs">
+    <p>Tittle</p>
+    <input type="text" value="" id="tittle">
+     </div>
+     <div class="inputs">
+     <p>Description</p>
+     <textarea  id="Description" cols="30" rows="5px" value=""></textarea>
+     </div>
+     <button id="addbtn">Add Note</button>
+     </div>
+     </div>
+          <!-- custom js link  -->
+    <script src="notes.js"></script>
+          <!-- custom js link  -->
+
+</body>
+</html>

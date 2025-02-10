@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    background-image: url(—Pngtree—a\ bunch\ of\ purple\ sticky_13004621.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    width: 100%;
+    
+    background-color: #c77dff;
+    padding: 20px;
+}
+#addnote{
+    width: 200px;
+    height: 180px;
+    font-size: 40px;
+    font-weight: bold;
+    color: purple;
+    background-color: aliceblue;
+    border-radius: 40%;
+    border: none;
+}
+#addnote i:hover {
+color: #23003e;
+    
+
+}
+.note {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    padding: 20px;
+    background-color: #f5f5f5; 
+}
+
+
+.newNotes {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px; 
+}
+
+
+.myNote {
+    width: 220px; 
+    min-height: 180px; 
+    font-weight: bold;
+    color: #4a148c; 
+    background-color: #f3e5f5; 
+    border-radius: 10px; 
+    border: 1px solid #e1bee7; 
+    padding: 15px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.myNote:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.myNote p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #6a1b9a; 
+    line-height: 1.5; 
+}
+
+
+.myNote h2 {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #4a148c;
+    margin-bottom: 10px; 
+}
+
+
+.myNote button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #7c4dff; 
+    color: #fff;
+    border: none;
+    border-radius: 5px; 
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+
+.myNote button:hover {
+    background-color: #651fff; 
+}
+
+
+
+.addform{
+    display: none;
+    width: 300px;
+    padding: 21px;
+    border-radius:30px;
+    background-color: purple;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,40%);
+    top: -7%;
+     
+}
+.addform input {
+    width: 90%;
+    height: 12px;
+    padding: 11px;
+    border: 1px solid white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.inputs{
+    margin-top: 11px;
+}
+textarea{
+    width: 93%;
+    padding: 5px;
+    font-size: 18px;
+}
+.inputs p{
+    font-size: 18px;
+    color: white;
+}
+#addbtn{
+    width: 100%;
+    height: 36px;
+    background-color: #c77dff;
+    color: white;
+    font-size: 24px;
+    margin-top: 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 1px 1px black;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+.head h2{
+    color: #fff;
+}
+
+.head button{
+    border: none;
+    background-color: transparent;
+    font-size: 33px;
+    cursor: pointer;
+    color: #fff;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .myNote {
+        width: 90%;
+    }
+
+    #addnote {
+        width: 150px;
+        height: 150px;
+        font-size: 30px;
+    }
+
+    .addform {
+        width: 95%;
+    }
+
+    #addbtn {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .head h2 {
+        font-size: 20px;
+    }
+
+    .head button {
+        font-size: 28px;
+    }
+
+    .myNote {
+        width: 100%;
+    }
+}
